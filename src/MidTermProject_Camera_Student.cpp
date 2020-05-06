@@ -23,7 +23,6 @@ int main(int argc, const char *argv[])
 {
 
     /* INIT VARIABLES AND DATA STRUCTURES */
-
     // data location
     string dataPath = "../";
 
@@ -59,7 +58,6 @@ int main(int argc, const char *argv[])
         double time1 = 0;
         double time2 = 0;
         double time3 = 0;
-
 
 
         // assemble filenames for current index
