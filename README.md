@@ -24,11 +24,7 @@ Main objective of this project is developing camera feature tracking algorithm a
 3. Compile: `cmake .. && make`
 4. Run it: `./2D_feature_tracking`.
 
-
-TASK MP.7
-Your seventh task is to count the number of keypoints on the preceding vehicle for all 10 images and take note of the distribution
- of their neighborhood size. Do this for all the detectors you have implemented.
-
+The following result is the summary of computational time and its performance.
 ## Keypoint Counting
 Table 1. Keypoint Counting for keypoint detection
 | Detector |Img 0|Img 1|Img 2|Img 3|Img 4|Img 5|Img 6|Img 7|Img 8|Img 9|Average|
@@ -40,7 +36,6 @@ Table 1. Keypoint Counting for keypoint detection
 | ORB      | 92  | 102 | 106 | 113 | 109 | 125 | 130 | 129 | 127 | 128 |  116  |
 | AKAZE    | 166 | 157 | 161 | 155 | 163 | 164 | 173 | 175 | 177 | 179 |  167  |
 | SIFT     | 138 | 132 | 124 | 137 | 134 | 140 | 137 | 148 | 159 | 137 |  138  |
-
 
 ## Computational time
 Table 2. Computation time for keypoint detection
@@ -105,6 +100,6 @@ on vehicles. Finally, in a short text, please justify your recommendation based 
 Here is the best three combination. The main reason is that three method have similar number of matching points between 100 ~ 140. In terms of the computational time, 
 FAST + BRIEF shows the best performance, then FAST + ORB, and then ORB + BRIEF.
 | Rank | Combination(detect + descriptor)| 
-| 1 | FAST + BRIEF                       |  
-| 2 | FAST + ORB                         |      
-| 3 | ORB + BRIEF                        |      
+| 1    | FAST + BRIEF                       |  
+| 2    | FAST + ORB                         |      
+| 3    | ORB + BRIEF                        |      
