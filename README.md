@@ -96,7 +96,9 @@ AKAZE extractor does not work because of the opencv issue.
 
 Here is the best three combination. The main reason is that three method have similar number of matching points between 100 ~ 140. In terms of the computational time, 
 FAST + BRIEF shows the best performance, then FAST + ORB, and then ORB + BRIEF.
+
 | Rank | Combination(detect + descriptor)   | 
+| ---- | ---                                |
 | 1    | FAST + BRIEF                       |  
 | 2    | FAST + ORB                         |      
 | 3    | ORB + BRIEF                        |      
