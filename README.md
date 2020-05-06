@@ -92,10 +92,7 @@ Table 3. Summary of all the detection/extraction/matching
 | SIFT + AKAZE                    |      N/A            |    N/A             |     N/A             |     N/A           |    N/A             |
 | SIFT + BRIEF                    |      1386           |    53.5654         |     0.792842        |     124           |    54.3631         |
 
-TASK MP.9
-Your ninth task is to log the time it takes for keypoint detection and descriptor extraction. The results must be entered into a spreadsheet 
-and based on this information you will then suggest the TOP3 detector / descriptor combinations as the best choice for our purpose of detecting keypoints 
-on vehicles. Finally, in a short text, please justify your recommendation based on your observations and on the data you collected.
+AKAZE extractor does not work because of the opencv issue.
 
 Here is the best three combination. The main reason is that three method have similar number of matching points between 100 ~ 140. In terms of the computational time, 
 FAST + BRIEF shows the best performance, then FAST + ORB, and then ORB + BRIEF.
